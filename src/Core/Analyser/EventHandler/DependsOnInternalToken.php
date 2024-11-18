@@ -18,7 +18,7 @@ class DependsOnInternalToken implements ViolationCreatingInterface
      */
     public function __construct(private readonly EventHelper $eventHelper, array $config)
     {
-        $this->internalTag = $config['internal_tag'] ?? null;
+        $this->internalTag = $config['internal_tag'];
     }
     public static function getSubscribedEvents()
     {
